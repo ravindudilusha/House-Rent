@@ -1,0 +1,54 @@
+/* PropertySearchForm.css */
+
+.property-search-form {
+  max-width: 800px;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: calc(50% - 8px);
+  margin-bottom: 16px;
+}
+
+.select,
+.input,
+.date-picker,
+.button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.centered-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
