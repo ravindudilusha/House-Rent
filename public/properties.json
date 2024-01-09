@@ -2,6 +2,7 @@
 	"properties": [
         {
             "id":"prop1",
+            "name":"Property1",
 			"type":"Flat",
             "bedrooms":2,
 			"price":800000,
@@ -15,6 +16,7 @@
         },
         {
             "id":"prop2",
+            "name":"Property2",
 			"type":"Flat",
             "bedrooms":2,
 			"price":700000,
@@ -28,6 +30,7 @@
         },
         {
             "id":"prop3",
+            "name":"Property3",
 			"type":"House",
             "bedrooms":2,
 			"price":900000,
@@ -40,6 +43,7 @@
             "postcode":"NW1"
         }, {
             "id":"prop4",
+            "name":"Property4",
 			"type":"Flat",
             "bedrooms":2,
 			"price":900000,
@@ -52,6 +56,7 @@
             "postcode":"NW1"
         }, {
             "id":"prop5",
+            "name":"Property5",
 			"type":"House",
             "bedrooms":2,
 			"price":600000,
