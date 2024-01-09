@@ -15,6 +15,7 @@ const PropertyList = ({ properties }) => {
 
   return (
    <>
+   
     <div className="property-list">
       <div className='container'>
         <div className='searchresults'>Search Results:</div>
@@ -22,7 +23,7 @@ const PropertyList = ({ properties }) => {
           {properties.map((property, index) => (
             <div key={property.id} className="">
               <div className=" property-card" onClick={() => handleCard(index)}>
-                <img src={property.imageUrl} alt={property.name} className="property-image" />
+                <img src={property.picture} alt={property.name} className="property-image" />
                 <div className="property-details">
                   <div className='property-header'>
                     <h3>{property.name}</h3>
@@ -33,7 +34,7 @@ const PropertyList = ({ properties }) => {
                     <p className='col-6'>Bedrooms: <span>{property.bedrooms}</span></p>
                   </div>
                   <div className={`row  ${cardStates[index] ? 'open' : 'closed'}`}>
-                    <p className='col-12'>Date Added: <span>{property.dateAdded}</span></p>
+                    <p className='col-12'>Date Added: <span>{property.added}</span></p>
                   </div>
                   <div className={`row  ${cardStates[index] ? 'open' : 'closed'}`}>
                     <p className='col-12'>Postcode Area: <span>{property.postcode}</span></p>
