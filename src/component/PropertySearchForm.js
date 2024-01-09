@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../styles/PropertySearchForm.css';
+import { FaCartShopping } from "react-icons/fa6";
 
 const PropertySearchForm = ({ onSearch }) => {
   const [type, setType] = useState('any');
@@ -13,6 +14,8 @@ const PropertySearchForm = ({ onSearch }) => {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [postcode, setPostcode] = useState('');
+  const [isCartOpen, setCartOpen] = useState(false);
+
 
   const handleSearch = () => {
     onSearch({
@@ -27,7 +30,20 @@ const PropertySearchForm = ({ onSearch }) => {
     });
   };
 
+  const handleCart=()=>{
+    setCartOpen(!isCartOpen)
+  }
+
   return (
+   <>
+   <nav>
+    <h1>Logo</h1>
+    <div className='cart' onClick={handleCart}>
+      <div className='numbr-of-item'>5</div>
+      <FaCartShopping size={25}/>
+    </div>
+   </nav>
+   <div className={`cart-list ${isCartOpen?'cart-open':'cart-close'}`}></div>
     <div className="property-search-form">
       <div className="row">
         <div className="col">
@@ -84,6 +100,7 @@ const PropertySearchForm = ({ onSearch }) => {
         Search
       </button>
     </div>
+   </>
   );
 };
 
