@@ -1,0 +1,66 @@
+.footer-logo {
+    max-width: 100%;
+    padding: 15px;
+    height: 150px;
+  }
+
+.footercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80px;
+
+}
+.footercontainer >p{
+    margin: 0 7px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+
+}
+footer{
+    margin-top: 70px;
+    height: 200px;
+
+}
+
+.footer{
+    background-color: #28282B;
+    color: white;
+}
+.footer-content-container{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.facebooklogo,
+.instagramlogo{
+    height: 30px;
+    width: 30px;
+}
+
+.socialcontainer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.socialcontainer svg{
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.socialcontainer svg:hover{
+   scale: 1.2;
+}
+
+
+.footercontainer p:hover{
+    scale: 1.2;
+ }

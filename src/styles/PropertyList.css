@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 *{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .searchresults{
@@ -15,31 +16,67 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    background-color: antiquewhite;
+    border-radius: 20px;
   }
   
   .property-cards {
-    /* display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px; */
+ 
   }
-  
+  .property-details{
+    padding:20px 10px 5px 10px;
+  }
+  .property-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .property-details h3{
+    font-size: 20px;
+  }
+  .property-details p{
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+  }
+  .property-header >p{
+    background: green;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 9px;
+    margin-top: 5px;
+    
+  }
   .property-card {
-    border: 1px solid #650000;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 5px;
+    border-radius: 25px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 280px;
+    width:280px;
+    background: white;
+    margin: 20px 10px 20px 27px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+  }
+  .property-card:hover {
+   scale: 1.05;
+  }
+  .closed{
+    display: none;
+  }
+  .open{
+    display: block;
   }
   .property-card {
-  /* ... (existing styles) */
   display: flex;
   flex-direction: column;
 }
 
 .property-image {
   width: 100%;
-  max-height: 200px; /* Adjust the max height as needed */
+  max-height: 200px; 
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 21px;
 }
