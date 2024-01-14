@@ -1,0 +1,95 @@
+.main-logo{
+    width: 90px;
+    height: 75px;
+    cursor: pointer;
+}
+.property-header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.property-header h1{
+    font-size: 29px;
+}
+.property-header button{
+    border: none;
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.property-page-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.big-image-container {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.big-image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.big-image-container img.active {
+    opacity: 1;
+}
+
+.big-image-container p {
+    font-size: 14px;
+    color: #555;
+}
+
+.small-images-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.small-images-container img {
+    max-width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.small-images-container img:hover {
+    transform: scale(1.1);
+}
+.property-details-card{
+    width: 700px;
+    margin: auto;
+}
+.details-header{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.property-items{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 5px;
+}
+.property-items h5{
+    font-weight: 400;
+    font-size: 15px;
+    color: #555555;
+}

@@ -4,8 +4,9 @@
 nav{
   display: flex;
   justify-content: space-between;
-  background: #D0E7D2;
+  background: green;
   padding: 10px 20px;
+  align-items: center;
 
 }
 .cart{
@@ -15,6 +16,7 @@ nav{
   position: relative;
   background: white;
   cursor: pointer;
+  margin-right: 20px;
 }
 .cart svg{
   position: absolute;
@@ -36,11 +38,12 @@ nav{
 }
 .cart-list{
   position: absolute;
-  width: 250px;
+  width: 280px;
   height: 80dvh;
   background: #D0E7D2;
   border-bottom-right-radius: 19px;
   transition: all 0.5s ease-in-out;
+  padding: 10px;
 
 
 }
@@ -48,7 +51,7 @@ nav{
   transform: translateX(0);
 }
 .cart-close{
-  transform: translateX(-250px);
+  transform: translateX(-290px);
 }
 
 .property-search-form {

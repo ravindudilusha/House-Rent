@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.favorite-card-cntainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.favorite-card{
+  display: flex;
+  height: auto;
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.favorite-card img{
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 10px;
+
+}
+.favorite-card button {
+  border: none;
+  background: transparent;
+}
